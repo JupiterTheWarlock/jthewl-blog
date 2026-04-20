@@ -1,3 +1,52 @@
 @use "./base.scss";
 
-// put your custom CSS here!
+// Claude Code Orange terminal aesthetic
+
+// Accent glow on links
+a[href] {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a[href]:hover {
+  text-shadow: 0 0 8px var(--secondary);
+}
+
+// Headings glow
+h1, h2, h3 {
+  text-shadow: 0 0 12px rgba(218, 119, 86, 0.15);
+}
+
+// Code blocks — darker background
+pre {
+  border: 1px solid var(--lightgray) !important;
+}
+
+// Blockquote — accent border
+blockquote {
+  border-left: 3px solid var(--secondary) !important;
+}
+
+// Selection highlight
+::selection {
+  background: var(--secondary);
+  color: var(--light);
+}
+
+// Scrollbar
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lightgray);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
