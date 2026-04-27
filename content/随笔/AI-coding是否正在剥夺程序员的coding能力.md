@@ -1,10 +1,11 @@
-# AI coding是否正在剥夺程序员的coding能力
-
-type: Post
-status: Published
+---
+title: AI coding是否正在剥夺程序员的coding能力
 date: 2026/04/20
-tags: AI, 编程, 思考
-category: 随笔
+tags:
+  - AI
+  - 编程
+  - 思考
+---
 
 我现在已经基本很少手写代码了，每一天工作期间手写的提示词数量绝对要远远超于手写的代码数量。
 

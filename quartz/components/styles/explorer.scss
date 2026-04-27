@@ -130,11 +130,27 @@ button.desktop-explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      display: block;
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--darkgray);
 
       &.active {
         opacity: 1;
         color: var(--tertiary);
       }
+    }
+
+    & li:last-child > a {
+      border-bottom: none;
+    }
+
+    & li > .folder-container {
+      padding: 0.35rem 0;
+      border-bottom: 1px solid var(--darkgray);
+    }
+
+    & li:last-child > .folder-container {
+      border-bottom: none;
     }
   }
 

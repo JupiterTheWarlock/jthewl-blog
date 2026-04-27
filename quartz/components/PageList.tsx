@@ -72,30 +72,25 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 
         return (
           <li class="section-li">
-            <div class="section">
-              <p class="meta">
-                {page.dates && <Date date={getDate(cfg, page)!} locale={cfg.locale} />}
-              </p>
-              <div class="desc">
-                <h3>
-                  <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                    {title}
-                  </a>
-                </h3>
+            <a href={resolveRelative(fileData.slug!, page.slug!)} class="article-card internal">
+              <div class="card-header">
+                <h3 class="card-title">{title}</h3>
+                {page.dates && (
+                  <span class="card-date">
+                    <Date date={getDate(cfg, page)!} locale={cfg.locale} />
+                  </span>
+                )}
               </div>
-              <ul class="tags">
-                {tags.map((tag) => (
-                  <li>
-                    <a
-                      class="internal tag-link"
-                      href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                    >
-                      {tag}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              {tags.length > 0 && (
+                <ul class="card-tags">
+                  {tags.map((tag) => (
+                    <li>
+                      <span class="tag-pill">{tag}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </a>
           </li>
         )
       })}
@@ -104,11 +99,7 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
 }
 
 PageList.css = `
-.section h3 {
-  margin: 0;
-}
-
-.section > .tags {
+.article-card .card-title {
   margin: 0;
 }
 `
