@@ -11,7 +11,12 @@ export function byDateAndAlphabetical(cfg: GlobalConfiguration): SortFn {
     // Sort by date/alphabetical
     if (f1.dates && f2.dates) {
       // sort descending
-      return getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
+      const dateDiff = getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
+      if (dateDiff !== 0) return dateDiff
+      // same date: sort alphabetically as tiebreaker
+      const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+      const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+      return f1Title.localeCompare(f2Title)
     } else if (f1.dates && !f2.dates) {
       // prioritize files with dates
       return -1
@@ -37,7 +42,12 @@ export function byDateAndAlphabeticalFolderFirst(cfg: GlobalConfiguration): Sort
     // If both are folders or both are files, sort by date/alphabetical
     if (f1.dates && f2.dates) {
       // sort descending
-      return getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
+      const dateDiff = getDate(cfg, f2)!.getTime() - getDate(cfg, f1)!.getTime()
+      if (dateDiff !== 0) return dateDiff
+      // same date: sort alphabetically as tiebreaker
+      const f1Title = f1.frontmatter?.title.toLowerCase() ?? ""
+      const f2Title = f2.frontmatter?.title.toLowerCase() ?? ""
+      return f1Title.localeCompare(f2Title)
     } else if (f1.dates && !f2.dates) {
       // prioritize files with dates
       return -1
