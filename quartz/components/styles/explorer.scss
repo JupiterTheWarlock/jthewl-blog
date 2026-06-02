@@ -132,7 +132,9 @@ button.desktop-explorer {
       pointer-events: all;
       display: block;
       padding: 0.35rem 0;
-      border-bottom: 1px solid var(--darkgray);
+      font-size: 0.9rem;
+      font-weight: $normalWeight;
+      border-bottom: 0.5px solid var(--lightgray);
 
       &.active {
         opacity: 1;
@@ -146,7 +148,7 @@ button.desktop-explorer {
 
     & li > .folder-container {
       padding: 0.35rem 0;
-      border-bottom: 1px solid var(--darkgray);
+      border-bottom: 0.5px solid var(--lightgray);
     }
 
     & li:last-child > .folder-container {
