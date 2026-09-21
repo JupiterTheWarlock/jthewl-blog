@@ -1,6 +1,8 @@
 ---
 title: AI原生游戏最难的是Agent部分
 date: 2026/08/11
+aliases:
+  - 随笔/26-08-11-AI原生游戏难在Agent而非游戏
 tags:
   - AI
   - 游戏开发

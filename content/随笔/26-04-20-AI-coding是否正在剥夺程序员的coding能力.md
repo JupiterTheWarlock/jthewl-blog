@@ -23,6 +23,4 @@ tags:
 
 可能陆地生物的祖先第一次从海里爬上陆地的时候，也会和我现在一样感到不安吧。
 
-![不用了，我正在用AI写代码](assets/AI%20coding是否正在剥夺程序员的coding能力_1_术士木星_来自小红书网页版.jpg)
-
 原文链接：[小红书](https://www.xiaohongshu.com/discovery/item/6984c0a90000000022023e7c?source=webshare&xhsshare=pc_web&xsec_token=ABjvrH5bkRnEO3FjHyFN45axNIG_UBFLVwjcKhOSSpQco=&xsec_source=pc_share)

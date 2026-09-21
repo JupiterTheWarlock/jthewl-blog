@@ -1,4 +1,9 @@
-# AI 原生游戏中的 Cognitive Harness 与 AI Feel Loop
+---
+title: AI 原生游戏中的 Cognitive Harness 与 AI Feel Loop
+tags:
+  - AI原生游戏
+  - 游戏开发
+---
 
 > 核心观点：AI 原生游戏的重点不是让 AI 主导游戏，而是在传统游戏运行时之上，构建一套能够进行上下文调度、工具暴露和反馈回填的 Cognitive Harness。  
 > AI 不是世界主机，传统游戏运行时才是。AI 更像是被运行时调用的认知模块。
@@ -535,7 +540,7 @@ AI Feel 的设计，不只是架构问题，也是体验问题。
 负责真实世界状态、规则、事件、输入、反馈、验证。
 
 第二层：Cognitive Harness
-负责认知触发、上下文切片、Agent 路、工具暴露、CRUD、输出回填。
+负责认知触发、上下文切片、Agent 路由、工具暴露、CRUD、输出回填。
 ```
 
 模型不算核心层，只是 Cognitive Harness 调用的认知算子。
@@ -568,7 +573,7 @@ AI Feel = Runtime Trigger + Context Injection + Agentic Operation + Feedback Com
 
 ### Cognitive Harness
 
-连接游戏运行时与 AI 的认知调度系统，负责上下文注入、工具暴露、Agent 路、输出协议和反馈回填。
+连接游戏运行时与 AI 的认知调度系统，负责上下文注入、工具暴露、Agent 路由、输出协议和反馈回填。
 
 ### Cognitive Tree
 
