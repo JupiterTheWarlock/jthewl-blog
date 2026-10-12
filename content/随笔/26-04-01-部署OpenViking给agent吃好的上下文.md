@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 部署OpenViking给agent吃好的上下文
 date: 2026/04/01
 tags:

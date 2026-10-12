@@ -1,4 +1,5 @@
 ---
+archived: true
 title: AI Native游戏大势所趋
 date: 2026/05/13
 tags:

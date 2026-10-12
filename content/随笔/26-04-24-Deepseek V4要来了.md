@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Deepseek V4要来了
 date: 2026/04/24
 tags:

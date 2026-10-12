@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Unity AI开放测试能否支棱
 date: 2026/05/05
 tags:

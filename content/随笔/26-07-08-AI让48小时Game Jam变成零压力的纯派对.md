@@ -1,4 +1,5 @@
 ---
+archived: true
 title: AI让48小时Game Jam变成零压力的纯派对
 date: 2026/07/08
 tags:

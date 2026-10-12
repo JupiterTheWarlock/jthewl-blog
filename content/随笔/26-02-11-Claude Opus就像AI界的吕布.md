@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Claude Opus就像AI界的吕布
 date: 2026/02/11
 tags:

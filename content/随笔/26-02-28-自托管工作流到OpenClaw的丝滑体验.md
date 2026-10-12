@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 自托管工作流到OpenClaw的丝滑体验
 date: 2026/02/28
 tags:

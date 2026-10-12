@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Codex长任务在Unity开发中的体验
 date: 2026/05/18
 tags:

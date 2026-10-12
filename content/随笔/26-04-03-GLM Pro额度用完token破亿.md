@@ -1,4 +1,5 @@
 ---
+archived: true
 title: GLM Pro额度用完token破亿
 date: 2026/04/03
 tags:

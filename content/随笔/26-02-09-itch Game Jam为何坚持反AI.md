@@ -1,4 +1,5 @@
 ---
+archived: true
 title: itch Game Jam为何坚持反AI
 date: 2026/02/09
 tags:

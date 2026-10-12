@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 参加TapTap Maker Gamejam
 date: 2026/05/29
 tags:

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: AI 原生游戏中的 Cognitive Harness 与 AI Feel Loop
 tags:
   - AI原生游戏

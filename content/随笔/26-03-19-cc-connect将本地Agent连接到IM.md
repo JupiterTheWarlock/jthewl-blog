@@ -1,4 +1,5 @@
 ---
+archived: true
 title: cc-connect将本地Agent连接到IM
 date: 2026/03/19
 tags:

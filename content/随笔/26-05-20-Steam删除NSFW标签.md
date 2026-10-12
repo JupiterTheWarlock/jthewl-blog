@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Steam删除NSFW标签
 date: 2026/05/20
 tags:

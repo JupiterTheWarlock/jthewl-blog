@@ -1,4 +1,5 @@
 ---
+archived: true
 title: AI原生游戏最难的是Agent部分
 date: 2026/08/11
 aliases:

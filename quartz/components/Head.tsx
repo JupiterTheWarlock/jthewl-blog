@@ -5,6 +5,7 @@ import { googleFontHref, googleFontSubsetHref } from "../util/theme"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 import { unescapeHTML } from "../util/escape"
 import { CustomOgImagesEmitterName } from "../plugins/emitters/ogImage"
+import { isArchived } from "../util/blog"
 export default (() => {
   const Head: QuartzComponent = ({
     cfg,
@@ -84,13 +85,27 @@ export default (() => {
 
         <link rel="icon" href={iconPath} />
         <meta name="description" content={description} />
+        {isArchived(fileData) && <meta name="robots" content="noindex, follow" />}
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
         <style data-persist>{"html,body{background:#0A0908;color-scheme:dark}"}</style>
-        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/brand.css?v=1.0.7")} data-persist />
-        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/blog.css?v=1.0.7")} data-persist />
-        <script defer src={joinSegments(baseDir, "static/junkyard-scene/host.js?v=1.0.7")} data-brand-profile="blog" data-persist />
+        <link
+          rel="stylesheet"
+          href={joinSegments(baseDir, "static/junkyard-scene/brand.css?v=1.0.7")}
+          data-persist
+        />
+        <link
+          rel="stylesheet"
+          href={joinSegments(baseDir, "static/junkyard-scene/blog.css?v=1.0.7")}
+          data-persist
+        />
+        <script
+          defer
+          src={joinSegments(baseDir, "static/junkyard-scene/host.js?v=1.0.7")}
+          data-brand-profile="blog"
+          data-persist
+        />
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}

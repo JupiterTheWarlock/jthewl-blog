@@ -1,4 +1,5 @@
 ---
+archived: true
 title: Unity MCP Server极其折磨
 date: 2026/05/15
 tags:

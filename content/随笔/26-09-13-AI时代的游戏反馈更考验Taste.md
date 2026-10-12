@@ -1,4 +1,5 @@
 ---
+archived: true
 title: AI时代的游戏反馈更考验Taste
 date: 2026/09/13
 tags:

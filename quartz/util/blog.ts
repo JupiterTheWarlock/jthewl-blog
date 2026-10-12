@@ -9,7 +9,14 @@ export function isBlogListing(slug: string) {
 }
 
 export function blogPosts(files: QuartzPluginData[]) {
-  return files.filter((file) => file.slug && !isBlogListing(file.slug) && !file.frontmatter?.draft)
+  return files.filter(
+    (file) =>
+      file.slug && !isBlogListing(file.slug) && !file.frontmatter?.draft && !isArchived(file),
+  )
+}
+
+export function isArchived(file: QuartzPluginData) {
+  return file.frontmatter?.archived === true
 }
 
 export function postSummary(file: QuartzPluginData) {

@@ -1,4 +1,5 @@
 ---
+archived: true
 title: GLM敏感审查与Claude Code的破限
 date: 2026/03/04
 tags:
