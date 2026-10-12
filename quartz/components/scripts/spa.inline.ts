@@ -102,6 +102,11 @@ async function _navigate(url: URL, isBack: boolean = false) {
   html.body.appendChild(announcer)
 
   // morph body
+  // micromorph matches body children by position. A runtime-only iframe would
+  // otherwise be removed, even with data-persist. Mirror it in the target tree
+  // without detaching the live iframe, which would reload its document/WebGL.
+  const background = document.body.querySelector(":scope > iframe[data-jthewl-scene]")
+  if (background) html.body.prepend(background.cloneNode(false))
   await micromorph(document.body, html.body)
 
   // scroll into place and add history

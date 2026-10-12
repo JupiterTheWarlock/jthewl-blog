@@ -87,9 +87,10 @@ export default (() => {
         <meta name="generator" content="Quartz" />
 
         {css.map((resource) => CSSResourceToStyleElement(resource, true))}
-        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/brand.css")} />
-        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/blog.css")} />
-        <script defer src={joinSegments(baseDir, "static/junkyard-scene/host.js")} data-brand-profile="blog" />
+        <style data-persist>{"html,body{background:#0A0908;color-scheme:dark}"}</style>
+        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/brand.css?v=1.0.7")} data-persist />
+        <link rel="stylesheet" href={joinSegments(baseDir, "static/junkyard-scene/blog.css?v=1.0.7")} data-persist />
+        <script defer src={joinSegments(baseDir, "static/junkyard-scene/host.js?v=1.0.7")} data-brand-profile="blog" data-persist />
         {js
           .filter((resource) => resource.loadTime === "beforeDOMReady")
           .map((res) => JSResourceToScriptElement(res, true))}
