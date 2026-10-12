@@ -1,5 +1,6 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
+import BlogIndex from "./quartz/components/BlogIndex"
 
 /**
  * Quartz 4 Configuration
@@ -78,8 +79,8 @@ const config: QuartzConfig = {
       Plugin.AliasRedirects(),
       Plugin.ComponentResources(),
       Plugin.ContentPage(),
-      Plugin.FolderPage(),
-      Plugin.TagPage(),
+      Plugin.FolderPage({ pageBody: BlogIndex }),
+      Plugin.TagPage({ pageBody: BlogIndex }),
       Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,

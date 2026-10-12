@@ -1,5 +1,4 @@
 .DS_Store
-.gitignore
 node_modules
 public
 prof
@@ -12,3 +11,16 @@ private/
 replit.nix
 
 .vercel
+
+# Local credentials, private configuration, and disposable output
+.env
+.env.*
+!.env.example
+!.env.*.example
+.npmrc
+.local/
+.cache/
+coverage/
+*.log
+*.key
+*.pem

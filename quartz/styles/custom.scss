@@ -1,10 +1,13 @@
 @use "./base.scss";
+@use "./blog.scss";
 
 // Claude Code Orange terminal aesthetic
 
 // Accent glow on links
 a[href] {
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  transition:
+    color 0.2s ease,
+    text-shadow 0.2s ease;
 }
 
 a[href]:hover {
@@ -12,7 +15,9 @@ a[href]:hover {
 }
 
 // Headings glow
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-shadow: 0 0 12px rgba(218, 119, 86, 0.15);
 }
 

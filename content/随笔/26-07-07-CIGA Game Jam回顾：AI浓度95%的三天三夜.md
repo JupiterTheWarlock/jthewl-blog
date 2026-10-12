@@ -1,6 +1,8 @@
 ---
 title: CIGA Game Jam回顾：AI浓度95%的三天三夜
 date: 2026/07/07
+featured: 2
+summary: 一个周末，用 AI 做游戏、生成星空、打印周边、上线排行榜。记录这次 Game Jam 的新尝试，以及没来得及磨好的细节。
 tags:
   - AI
   - 游戏开发
