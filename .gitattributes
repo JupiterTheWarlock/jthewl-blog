@@ -1,2 +1,4 @@
 * text=auto eol=lf
 quartz/static/junkyard-scene/** text eol=lf
+quartz/static/junkyard-scene/**/*.glb binary
+quartz/static/junkyard-scene/**/*.png binary
