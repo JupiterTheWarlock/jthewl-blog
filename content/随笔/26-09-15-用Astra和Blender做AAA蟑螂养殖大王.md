@@ -1,4 +1,5 @@
 ---
+archived: true
 title: 用Astra和Blender做AAA蟑螂养殖大王
 date: 2026/09/15
 tags:

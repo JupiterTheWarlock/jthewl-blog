@@ -1,5 +1,4 @@
 ---
-archived: true
 title: Claude Code Game Studio是夯还是拉
 date: 2026/05/27
 tags:
