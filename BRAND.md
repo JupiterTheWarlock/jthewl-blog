@@ -6,6 +6,10 @@ Quartz Head 加载同源共享样式和 host 脚本。blog 模式使用与主页
 
 正常运行 `npx quartz build` 即包含全部静态资源，无需访问其他个人站点。
 
+## 标题左侧公司 Logo
+
+2026-10-13，标题左侧星形图标替换为正式公司 Logo「虚空水母 E20」。`quartz/static/company-logo.svg` 由工作台 `tools/jthewl-brand/company-logo/export.py --sync-blog` 同步，`--check --sync-blog` 校验一致性。`BlogHeader.tsx` 通过 CSS 遮罩沿用博客橙色；首页和文章页共用同一图标。其形态为中央空心圆、四点共根的八条交错触手、整体倾斜 45°、同组末端间隔 20°。浏览器 favicon 保持原设置。
+
 ## 博客内容展示
 
 首页、分类页和话题页使用文章卡片，直接展示标题、摘要、日期与原始配图。保留共享动态背景，文章页使用半透明阅读面板；文件树和关系图不再占据首页。

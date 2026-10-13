@@ -11,9 +11,13 @@ export default (() => {
   const BlogHeader: QuartzComponent = (props) => (
     <div class="blog-header">
       <a class="blog-name internal" href={pathToRoot(props.fileData.slug!)}>
-        <span class="blog-mark" aria-hidden="true">
-          ✳
-        </span>
+        <span
+          class="blog-mark"
+          aria-hidden="true"
+          style={{
+            "--blog-logo": `url("${pathToRoot(props.fileData.slug!)}/static/company-logo.svg")`,
+          }}
+        />
         {props.cfg.pageTitle}
       </a>
       <nav class="blog-nav" aria-label="网站导航">
