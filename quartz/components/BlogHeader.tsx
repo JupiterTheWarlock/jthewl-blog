@@ -21,7 +21,7 @@ export default (() => {
         {props.cfg.pageTitle}
       </a>
       <nav class="blog-nav" aria-label="网站导航">
-        <a href="https://www.jthewl.cc" class="personal-link">
+        <a href="https://jupiterthewarlock.com" class="personal-link">
           个人主页 <span aria-hidden="true">↗</span>
         </a>
         <SearchBox {...props} />
