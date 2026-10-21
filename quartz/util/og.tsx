@@ -62,6 +62,12 @@ export async function getSatoriFonts(headerFont: FontSpecification, bodyFont: Fo
     ...bodyFonts.filter((font): font is NonNullable<typeof font> => font !== null),
   ]
 
+  // Fira Code has no Chinese glyphs. Card rendering needs its own CJK font,
+  // independently of the browser's system-font fallback on the actual website.
+  const chineseFont = await fetchTtf("Noto Sans SC", 400)
+  if (!chineseFont) throw new Error("Could not load the Chinese font for social cards")
+  fonts.push({ name: "Noto Sans SC", data: chineseFont, weight: 400, style: "normal" })
+
   return fonts
 }
 
@@ -195,8 +201,8 @@ export const defaultImage: SocialImageOptions["imageStructure"] = ({
 
   // Get tags if available
   const tags = fileData.frontmatter?.tags ?? []
-  const bodyFont = getFontSpecificationName(cfg.theme.typography.body)
-  const headerFont = getFontSpecificationName(cfg.theme.typography.header)
+  const bodyFont = `${getFontSpecificationName(cfg.theme.typography.body)}, Noto Sans SC`
+  const headerFont = `${getFontSpecificationName(cfg.theme.typography.header)}, Noto Sans SC`
 
   return (
     <div
